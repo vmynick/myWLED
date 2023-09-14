@@ -1,4 +1,4 @@
-name: WLED compile
+name: WLED compile2 (audio reactive)
 
 on:
     workflow_dispatch:
