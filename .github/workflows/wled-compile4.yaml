@@ -26,11 +26,11 @@ jobs:
         unzip /tmp/WLEDtemp/mm.zip -d /tmp/WLEDtemp
         find /tmp/WLEDtemp -maxdepth 1 -mindepth 1 -name "*" -type d >> /tmp/WLEDtemp/wledfoldername
         cd `cat /tmp/WLEDtemp/wledfoldername`
-        echo '[env:custom_build]' >>platformio.ini
+        echo '[env:custom_build_m5]' >>platformio.ini
         echo 'extends = env:soundReactive_m5StickC_Plus' >>platformio.ini
         echo 'build_flags = ${env:soundReactive_m5StickC_Plus.build_flags} -D USERMOD_PING_PONG_CLOCK' >>platformio.ini
         
-        pio run -e custom_build || pio run -e custom_build
+        pio run -e custom_build_m5 || pio run -e custom_build_m5
     - name: Copy Files
       run: |
         cd $GITHUB_WORKSPACE
