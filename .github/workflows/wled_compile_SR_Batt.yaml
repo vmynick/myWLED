@@ -1,4 +1,4 @@
-name: WLED compile
+name: WLED compile 3 SR Batt
 
 on:
     workflow_dispatch:
