@@ -1,4 +1,4 @@
-name: WLED compile 3 SR Batt
+name: WLED compile Lolin C3 Pico SR Batt
 
 on:
     workflow_dispatch:
