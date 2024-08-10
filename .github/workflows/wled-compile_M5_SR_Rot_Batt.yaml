@@ -1,4 +1,4 @@
-name: wled-compile_M5_SR_Rot_Batt
+name: wled-compile-M5-SR-Rot-Batt
 
 on:
     workflow_dispatch:
